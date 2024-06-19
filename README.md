@@ -54,7 +54,7 @@ This project utilizes the Claude AI model through an API. You must manually fill
 
 Example:   
 ```bash
-client = anthropic.Anthropic(api_key='your_actual_api_key_here')
+client = anthropic.Anthropic(api_key='your_api_key_here')
 ```
 
 ## Examples
