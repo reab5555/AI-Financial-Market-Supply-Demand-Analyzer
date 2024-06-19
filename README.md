@@ -38,10 +38,10 @@ List the results only in the following format for example:
    n_categories = 10   
    pct_threshold = 5   
    ```   
-initial_date: Date Period: The specific date for identifying high-demand products.   
-n_days: The number of days after the demand date to analyze stock value changes.   
-n_categories: The number of product markets or categories to display.
-pct_threshold: The minimum of percentage increase for market stocks to display for the time period.
+- *initial_date*: Date Period: The specific date for identifying high-demand products.   
+- *n_days*: The number of days after the demand date to analyze stock value changes.   
+- *n_categories*: The number of product markets or categories to display.
+- *pct_threshold*: The minimum of percentage increase for market stocks to display for the time period.
 
 ## Configuration
 ### API Key
