@@ -60,7 +60,6 @@ client = anthropic.Anthropic
 
 ## Examples
 ### As of 1/2024
-<img src="example_images/output_graph_1.png" width="700" alt="alt text">
 <img src="example_images/output_graph_2.png" width="700" alt="alt text">
 <img src="example_images/output_graph_3.png" width="700" alt="alt text">
 
