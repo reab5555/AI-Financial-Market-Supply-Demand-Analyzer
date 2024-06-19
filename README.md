@@ -1,4 +1,4 @@
-# Financial Market Demand and Supply Analyzer
+# Financial Market Supply-Demand Analyzer
 This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their stock values.
 
 ## Features
