@@ -1,3 +1,5 @@
+<img src="example_images/icon.png" width="100" alt="alt text">
+
 # Financial Market Supply-Demand Profiler
 This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their growth percentage rate.
 
@@ -56,3 +58,13 @@ client = anthropic.Anthropic
 (api_key='your_actual_api_key_here')
 ```
 
+## Examples
+### As of 1/2023
+<img src="example_images/output_graph_1.png" width="500" alt="alt text">
+<img src="example_images/output_graph_2.png" width="500" alt="alt text">
+<img src="example_images/output_graph_3.png" width="500" alt="alt text">
+
+### Durring Covid-19
+<img src="example_images/output_graph_1_2.png" width="500" alt="alt text">
+<img src="example_images/output_graph_2_2.png" width="500" alt="alt text">
+<img src="example_images/output_graph_3_2.png" width="500" alt="alt text">
