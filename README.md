@@ -1,5 +1,5 @@
 # Financial Market Supply-Demand Profiler
-This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their stock values.
+This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their growth percentage rate.
 
 ## Features
 - **Demand Identification:** Uses Claude LLM model by Anthropic and prompt engineering to identify the products or categories with the highest demand for a given date range.
