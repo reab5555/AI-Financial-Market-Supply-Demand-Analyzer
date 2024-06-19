@@ -7,18 +7,37 @@ This project is designed to identify the markets or categories of products with 
 - **Demand Identification:** Uses AI/LLM Claude model and prompt engineering to identify the products or categories with the highest demand for a given date range.
 - **Supplier Analysis:** Identifies the main suppliers of the high-demand products and retrieves their stock values.
 - **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.
+Using Claude Opus with Prompt Engineering
 
-## How It Works
+In the Financial Market Demand and Supply Analyzer, the Claude Opus model is utilized to identify products or categories with the highest demand. This involves crafting precise prompts to guide the model in generating the desired information.
+Prompt Engineering
 
-1. **Demand Identification:**
-   - Utilizes the Claude AI model and prompt engineering techniques to analyze market data and identify high-demand products or categories for a given date period.
-   
-2. **Supplier and Stock Value Retrieval:**
-   - Determines the main suppliers for the identified high-demand products.
-   - Retrieves stock values for these suppliers during the specified date range.
+Prompt engineering involves designing specific prompts that guide the language model to produce the required output. Here’s how it is applied in this project:
 
-3. **Profit Margin Calculation:**
-   - Calculates the percentage change in stock values from the initial demand date to `X` days after.
-   - Provides insights into how much the suppliers profited from the increased demand and product sales.
+    Define the Task:
+    -User Prompt-
+    "What type of specific products as of {initial_date} were with the most demand?"   
+       
+    -System Prompt-   
+    "   
+    As an analyst in finance, list {n_categories} types or categories of products.   
+    also mention which companies provide these products or services - stocks must be from the {market_index} index.
+    "      
+       
+    Specify the Model Output Format: 
+    list it only in the following format for example:   
+    "   
+    || 1. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5   
+    || 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....
+    "      
+    
+    Set Parameters:    
+    initial_date = "3/2020"   
+    n_days = 100   
+    market_index = "S&P500"   
+    n_categories = 10   
+    pct_threshold = 5   
 
+Example Prompt
 
+The following prompt is used to guide the Claude Opus model in generating the required information:
