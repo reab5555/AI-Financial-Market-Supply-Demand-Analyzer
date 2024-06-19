@@ -32,23 +32,20 @@ To use this project, follow these steps:
 
 Navigate to the project directory:
 
-bash
-
-cd Stocks-Demand-Supply-Analysis
+   ```bash
+   cd Stocks-Demand-Supply-Analysis
 
 Install the required dependencies:
 
-bash
-
+   ```bash
     pip install -r requirements.txt
 
 Usage
 
 To run the analysis, execute the script with the following command:
 
-bash
-
-python Stocks_Demand_Supply.py
+   ```bash
+   python Stocks_Demand_Supply.py
 
 Make sure to update the script with the appropriate parameters for the date range and the number of days for profit analysis.
 Configuration
