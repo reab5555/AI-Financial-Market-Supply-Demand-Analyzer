@@ -54,10 +54,8 @@ This project utilizes the Claude AI model through an API. You must manually fill
 
 Example:   
 ```bash
-API_KEY = 'your_actual_api_key_here'   
-
-Date Period and Analysis Configuration   
-
-The script requires configuration for:   
+client = anthropic.Anthropic(
+api_key='your_actual_api_key_here'
+)
 ```
 
