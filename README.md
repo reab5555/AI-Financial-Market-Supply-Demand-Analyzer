@@ -14,20 +14,20 @@ Prompt engineering involves designing specific prompts that guide the language m
 ### Define the Task:   
 **User Prompt**   
 ```
-*What type of specific products as of {initial_date} were with the most demand?*     
+What type of specific products as of {initial_date} were with the most demand?     
 ```
        
 **System Prompt**   
 ```
-*As an analyst in finance, list {n_categories} types or categories of products.   
-also mention which companies provide these products or services - stocks must be from the {market_index} index.*   
+As an analyst in finance, list {n_categories} types or categories of products.   
+also mention which companies provide these products or services - stocks must be from the {market_index} index.  
 ```
        
 ### Specify the Model Output Format:    
 ```
-*list the results only in the following format for example:      
+list the results only in the following format for example:      
 || 1. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5   
-|| 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....*      
+|| 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....      
 ```
     
 ### Set Parameters:    
