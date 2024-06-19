@@ -25,7 +25,7 @@ also mention which companies provide these products or services - stocks must be
        
 ### Specify the Model Output Format:    
 ```
-list the results only in the following format for example:      
+List the results only in the following format for example:      
 || 1. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5   
 || 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....      
 ```
