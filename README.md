@@ -15,7 +15,7 @@ Prompt Engineering
 Prompt engineering involves designing specific prompts that guide the language model to produce the required output. Here’s how it is applied in this project:
 
     Define the Task:
-    -User Prompt-
+    #-User Prompt-
     "What type of specific products as of {initial_date} were with the most demand?"   
        
     -System Prompt-   
