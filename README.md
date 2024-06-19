@@ -9,7 +9,7 @@ This project is designed to identify the markets or categories of products with 
 - **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.   
 
 ## Prompt Engineering
-Claude Opus is an advanced language model developed by Anthropic, designed for a variety of natural language processing tasks guided by prompts.    
+Claude 3 Opus is an advanced language model developed by Anthropic, designed for a variety of natural language processing tasks guided by prompts.    
    
 Prompt engineering involves designing specific prompts that guide the language model to produce the required output. Here’s how it is applied in this project:      
 
