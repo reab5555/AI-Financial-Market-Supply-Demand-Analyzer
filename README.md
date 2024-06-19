@@ -1,9 +1,7 @@
 # Financial Market Demand and Supply Analyzer
-
 This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their stock values.
 
 ## Features
-
 - **Demand Identification:** Uses AI/LLM Claude model and prompt engineering to identify the products or categories with the highest demand for a given date range.
 - **Supplier Analysis:** Identifies the main suppliers of the high-demand products and retrieves their stock values.
 - **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.
@@ -14,22 +12,22 @@ In the Financial Market Demand and Supply Analyzer, the Claude Opus model is uti
 ## Prompt Engineering
 Prompt engineering involves designing specific prompts that guide the language model to produce the required output. Here’s how it is applied in this project:   
 
-### Define the Task:
-#### -User Prompt-
-"What type of specific products as of {initial_date} were with the most demand?"   
+### Define the Task:   
+**User Prompt**   
+*"What type of specific products as of {initial_date} were with the most demand?"*     
        
-### -System Prompt-   
+**System Prompt**  
 "   
-As an analyst in finance, list {n_categories} types or categories of products.   
-also mention which companies provide these products or services - stocks must be from the {market_index} index.
+*As an analyst in finance, list {n_categories} types or categories of products.   
+also mention which companies provide these products or services - stocks must be from the {market_index} index.*   
 "      
        
-### Specify the Model Output Format: 
-list it only in the following format for example:   
+### Specify the Model Output Format:  
 "   
+*list the results only in the following format for example:      
 || 1. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5   
-|| 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....
-"      
+|| 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....*    
+"  
     
 ### Set Parameters:    
 initial_date = "3/2020"   
