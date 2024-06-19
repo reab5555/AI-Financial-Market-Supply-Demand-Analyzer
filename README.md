@@ -65,6 +65,5 @@ client = anthropic.Anthropic
 <img src="example_images/output_graph_3.png" width="700" alt="alt text">
 
 ### Durring Covid-19
-<img src="example_images/output_graph_1_2.png" width="700" alt="alt text">
 <img src="example_images/output_graph_2_2.png" width="700" alt="alt text">
 <img src="example_images/output_graph_3_2.png" width="700" alt="alt text">
