@@ -2,10 +2,9 @@
 This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their growth percentage rate.
 
 ## Features
-- **Demand Identification:** Uses Claude LLM model by Anthropic and prompt engineering to identify the products or categories with the highest demand for a given date.
-- **Supplier Analysis:** Identifies the main suppliers of the high-demand products and retrieves their stock values.
-- **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.
-Using Claude Opus with Prompt Engineering
+- **Demand Identification:** Uses Claude LLM model by Anthropic and prompt engineering to identify the products or categories with the highest demand for a given date.   
+- **Supplier Analysis:** Identifies the main suppliers of the high-demand products and retrieves their stock values.   
+- **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.   
 
 In the Financial Market Demand and Supply Analyzer, the Claude Opus model is utilized to identify products or categories with the highest demand. This involves crafting precise prompts to guide the model in generating the desired information.
 
