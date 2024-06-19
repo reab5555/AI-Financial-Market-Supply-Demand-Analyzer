@@ -6,8 +6,6 @@ This project is designed to identify the markets or categories of products with 
 - **Supplier Analysis:** Identifies the main suppliers of the high-demand products and retrieves their stock values.   
 - **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.   
 
-In the Financial Market Demand and Supply Analyzer, the Claude Opus model is utilized to identify products or categories with the highest demand. This involves crafting precise prompts to guide the model in generating the desired information.
-
 ## Prompt Engineering
 Claude Opus is an advanced language model developed by Anthropic, designed for a variety of natural language processing tasks guided by prompts.   
 Prompt engineering involves designing specific prompts that guide the language model to produce the required output. Here’s how it is applied in this project:   
