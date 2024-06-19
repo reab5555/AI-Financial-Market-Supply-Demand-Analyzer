@@ -29,3 +29,51 @@ To use this project, follow these steps:
 
    ```bash
    git clone https://github.com/yourusername/Stocks-Demand-Supply-Analysis.git
+
+Navigate to the project directory:
+
+bash
+
+cd Stocks-Demand-Supply-Analysis
+
+Install the required dependencies:
+
+bash
+
+    pip install -r requirements.txt
+
+Usage
+
+To run the analysis, execute the script with the following command:
+
+bash
+
+python Stocks_Demand_Supply.py
+
+Make sure to update the script with the appropriate parameters for the date range and the number of days for profit analysis.
+Configuration
+
+The script requires configuration for:
+
+    Date Period: The specific date range for identifying high-demand products.
+    Number of Days for Analysis: The number of days after the demand date to analyze stock value changes.
+
+Dependencies
+
+    Python 3.x
+    Claude AI/LLM
+    Prompt Engineering Libraries
+
+Contributing
+
+Contributions are welcome! Please follow these steps:
+
+    Fork the repository.
+    Create a new branch (git checkout -b feature-branch).
+    Commit your changes (git commit -am 'Add new feature').
+    Push to the branch (git push origin feature-branch).
+    Create a new Pull Request.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
