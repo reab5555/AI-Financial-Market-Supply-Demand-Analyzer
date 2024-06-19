@@ -27,9 +27,10 @@ also mention which companies provide these products or services - stocks must be
 || 2. Products: products | Suppliers: stock symbol 1, stock symbol 2, stock symbol 3, stock symbol 4, stock symbol 5 ||....*      
     
 ### Set Parameters:    
-initial_date = "3/2020"   
-n_days = 100   
-market_index = "S&P500"   
-n_categories = 10   
-pct_threshold = 5   
+   ```bash
+       initial_date = "3/2020"   
+       n_days = 100   
+       market_index = "S&P500"   
+       n_categories = 10   
+       pct_threshold = 5   
 
