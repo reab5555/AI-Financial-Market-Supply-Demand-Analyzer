@@ -8,6 +8,7 @@ This project is designed to identify the markets or categories of products with 
 
 ## Prompt Engineering
 Claude Opus is an advanced language model developed by Anthropic, designed for a variety of natural language processing tasks guided by prompts.    
+   
 Prompt engineering involves designing specific prompts that guide the language model to produce the required output. Here’s how it is applied in this project:      
 
 ### Define the Task:   
