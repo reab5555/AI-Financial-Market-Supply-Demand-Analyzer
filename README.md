@@ -1,6 +1,6 @@
 # Financial Market Demand and Supply Analyzer
 
-This project is designed to identify the products or supplies with the most demand for a specific date period, determine the main suppliers of these products, and analyze their stock values. Additionally, it evaluates the percentage change in stock value from the demand period to a specified number of days afterward to assess how much these suppliers profited from the increased demand and subsequent sales.
+This project is designed to identify the markets or categories of products with the most demand for a specific date period, determine the main suppliers of these products, and analyze their stock values. Additionally, it evaluates the percentage change in stock value from the demand period to a specified number of days afterward to assess how much these suppliers profited from the increased demand and subsequent sales.
 
 ## Features
 
