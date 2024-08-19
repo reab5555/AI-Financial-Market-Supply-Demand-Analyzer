@@ -4,16 +4,16 @@ from visualization import plot_stock_performance, plot_product_performance, crea
 from datetime import datetime, timedelta
 
 MARKET_INDEX = "S&P500"
+N_CATEGORIES = 10  # Set a constant for number of categories
 
-
-def analyze_stocks(year, month, day, n_days, n_categories, pct_threshold):
+def analyze_stocks(year, month, day, n_days, pct_threshold):
     # Process input
     initial_date = f"{year}-{month:02d}-{day:02d}"
     start_date = datetime(year, month, day)
     end_date = start_date + timedelta(days=n_days)
 
     # Get product data
-    product_dict, stock_symbols = process_product_data(initial_date, n_categories, MARKET_INDEX)
+    product_dict, stock_symbols = process_product_data(initial_date, N_CATEGORIES, MARKET_INDEX)
 
     # Check stock performance
     performance_results = check_stock_performance(stock_symbols, start_date, end_date, pct_threshold)
@@ -33,7 +33,6 @@ def analyze_stocks(year, month, day, n_days, n_categories, pct_threshold):
 
     return results_text, stock_performance_plot, product_performance_plot, heatmap_plot
 
-
 # Create lists for dropdown menus
 current_year = datetime.now().year
 current_month = datetime.now().month
@@ -43,9 +42,9 @@ days = list(range(1, 32))
 
 # Create Gradio interface
 with gr.Blocks() as iface:
-    gr.Markdown("# Stock Market Analysis App")
-    gr.Markdown(f"Analyze {MARKET_INDEX} stock performance based on product categories and market trends.")
-
+    gr.Markdown("# AI Financial Market Supply-Demand Analyzer")
+    gr.Markdown(f"Analyze {MARKET_INDEX} stock performance based on {N_CATEGORIES} product categories and market trends.")
+    
     with gr.Row():
         year = gr.Dropdown(choices=years, value=current_year, label="Year", info="Select the year for analysis")
         month = gr.Dropdown(choices=months, value=current_month, label="Month", info="Select the month for analysis")
@@ -53,13 +52,10 @@ with gr.Blocks() as iface:
 
     n_days = gr.Slider(minimum=30, maximum=365, step=1, value=100, label="Number of Days",
                        info="The duration of the analysis period in days")
-    n_categories = gr.Slider(minimum=5, maximum=20, step=1, value=10, label="Number of Categories",
-                             info="The number of product categories to analyze")
     pct_threshold = gr.Slider(minimum=1, maximum=20, step=0.5, value=5, label="Percentage Threshold",
                               info="The minimum percentage increase for a stock to be included in the results")
 
     submit_button = gr.Button("Submit")
-
     results = gr.Textbox(label="Results")
     stock_performance = gr.Plot(label="Stock Performance")
     product_performance = gr.Plot(label="Product Performance")
@@ -67,7 +63,7 @@ with gr.Blocks() as iface:
 
     submit_button.click(
         analyze_stocks,
-        inputs=[year, month, day, n_days, n_categories, pct_threshold],
+        inputs=[year, month, day, n_days, pct_threshold],
         outputs=[results, stock_performance, product_performance, heatmap]
     )
 
