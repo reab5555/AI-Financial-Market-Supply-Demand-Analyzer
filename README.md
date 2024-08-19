@@ -1,6 +1,6 @@
 <img src="example_images/icon.png" width="100" alt="alt text">
 
-# Financial Market Supply-Demand AI Profiler
+# AI Financial Market Supply-Demand Analyzer
 This project is designed to identify the markets or categories of products with the most demand for a specific date, determine the main suppliers of these products in the market, and analyze their growth percentage rate.
 
 ## Features
