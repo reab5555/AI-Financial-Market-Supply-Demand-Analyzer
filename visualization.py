@@ -84,7 +84,7 @@ def create_heatmap(product_dict, performance_results, start_date, end_date):
                         labels=dict(x="Suppliers", y="Products", color="Percentage Increase"),
                         x=heatmap_data.columns,
                         y=heatmap_data.index,
-                        color_continuous_scale='RdBu_r',
+                        color_continuous_scale='Greens',
                         aspect="auto")
 
         fig.update_layout(
