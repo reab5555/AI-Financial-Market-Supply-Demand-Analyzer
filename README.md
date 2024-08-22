@@ -6,6 +6,7 @@ This project is designed to identify the markets or categories of products with 
 [App](https://huggingface.co/spaces/reab5555/AI-Financial-Market-Supply-Demand-Analyzer)
 
 ## Features
+- **Realtine Stock Data:** Using yFinance that provides a convenient interface for fetching historical market data from Yahoo Finance. It is widely used in finance-related applications for retrieving stock prices, financial statements, company information
 - **Demand Identification:** Uses large language model RAG and prompt engineering to identify the products or categories with the highest demand for a given date.   
 - **Supplier Identification:** Identifies the main suppliers of the high-demand products and retrieves their stock values.   
 - **Profit Analysis:** Calculates the percentage change in stock value from the demand date to a specified number of days later, indicating the profit margin of the suppliers.   
