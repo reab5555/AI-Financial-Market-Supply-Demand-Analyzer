@@ -14,24 +14,20 @@ def generate_distinct_colors(n):
 def plot_stock_performance(performance_results, start_date, end_date):
     sorted_results = sorted(performance_results.items(), key=lambda x: x[1]['percentage_increase'], reverse=True)
     if sorted_results:
-        symbols, increases = zip(*[(symbol, data['percentage_increase']) for symbol, data in sorted_results])
-
+        symbols, increases = zip(*[(symbol, data['percentage_increase']) for symbol, data in sorted_results[:50]])  # Limit to top 50 performers
         colors = generate_distinct_colors(len(symbols))
-
         fig = go.Figure(data=[
             go.Bar(x=symbols, y=increases,
                    text=[f'{increase:.2f}%' for increase in increases],
                    textposition='auto',
                    marker_color=colors)
         ])
-
         fig.update_layout(
             title=f'Stock Performance (S&P 500) from {start_date.strftime("%Y-%m-%d")} to {end_date.strftime("%Y-%m-%d")}',
             xaxis_title='Stock Symbols',
             yaxis_title='Percentage Increase',
             xaxis_tickangle=-45
         )
-
         return fig
     return go.Figure()
 
@@ -56,14 +52,13 @@ def plot_product_performance(product_dict, performance_results, start_date, end_
                    textposition='auto',
                    marker_color=colors)
         ])
-
+    
         fig.update_layout(
             title=f'Mean Percentage Increase for Product Categories from {start_date.strftime("%Y-%m-%d")} to {end_date.strftime("%Y-%m-%d")}',
             xaxis_title='Products',
             yaxis_title='Mean Percentage Increase',
             xaxis_tickangle=-45
         )
-
         return fig
     return go.Figure()
 

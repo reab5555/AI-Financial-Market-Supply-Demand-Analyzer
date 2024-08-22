@@ -1,0 +1,9 @@
+gradio
+langchain
+langchain_openai
+openai
+yfinance
+pandas
+numpy
+plotly
+python-dotenv
