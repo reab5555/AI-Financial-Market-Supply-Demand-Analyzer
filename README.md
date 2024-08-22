@@ -17,6 +17,6 @@ This project is designed to identify the markets or categories of products with 
 - *Number of Days*: The number of days after the demand date to analyze stock value changes.   
 - *Percentage Threshold*: The minimum of percentage increase for market stocks to display for the time period.
 
-<img src="example_images/output_1.png" width="600" alt="alt text">
-<img src="example_images/output_2.png" width="600" alt="alt text">
-<img src="example_images/output_3.png" width="600" alt="alt text">
+<img src="example_images/output_1.png" width="800" alt="alt text">
+<img src="example_images/output_2.png" width="800" alt="alt text">
+<img src="example_images/output_3.png" width="800" alt="alt text">
